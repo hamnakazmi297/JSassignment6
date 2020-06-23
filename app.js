@@ -494,10 +494,95 @@
 //         return sq;
 //     }
 //     var hep = calculateSquare(base) + calculateSquare(perp);
-//     hep = calculateSquare(hep);
+//     hep =  Math.sqrt(hep);
+//     hep = hep.toFixed(2);
 //     document.write("Hypotenuse = " + hep);
 // }
 // var perp = +prompt("Enter perpendicular");
 // var base = +prompt("Enter base");
 // calculateHypotenuse(perp, base);
 
+// Chapter No: 35 - 38 & Task No: 09
+// function area(width, height) {       
+//         var area = width * height;
+//         area = area.toFixed(2);
+//         document.write("Area = " + area);
+//     }
+//     var height = +prompt("Enter height");
+//     area(20, height);
+
+// Chapter No: 35 - 38 & Task No: 10
+// function palindrome(str) {
+//     var lowRegStr = str.toLowerCase();
+//     var reverseStr = lowRegStr.split('').reverse().join('');
+//     if (reverseStr === lowRegStr) {
+//         alert(str + " is palindrome.")
+//     }
+//     else {
+//         alert(str + " is not palindrome.")
+//     }
+// }
+// var str = prompt("Enter word");
+// palindrome(str);
+
+// Chapter No: 35 - 38 & Task No: 11
+// function titleCase(msg){
+//     var txt = msg.toLowerCase().split(" ");
+//     for (var i = 0; i < txt.length; i++) {
+//         txt[i] = txt[i][0].toUpperCase() + txt[i].slice(1);
+//     }
+//     document.write("User Input: " + msg);
+//     document.write("<br>Title case: " + txt.join(" "));
+// }
+// titleCase("the quick brown fox");
+
+// Chapter No: 35 - 38 & Task No: 12
+// function longestWord(str) {
+//     var str = str.split(" ");
+//     var word = str[0];
+
+//     for (var i = 1; i < str.length; i++) {
+//         if (word.length < str[i].length) {
+//             word = str[i];
+//         }
+//     }
+//     document.write("EXAMPLE STRING : 'Web Development Tutorial'");
+//     document.write("<br>EXPECTED OUTPUT : " + word);
+//     return word;
+// }
+// longestWord('Web Development Tutorial');
+
+// Chapter No: 35 - 38 & Task No: 13
+// function findLetter(word, letter) {
+//     var txt = word.toLowerCase();
+//     count = 0;
+//     for (var i = 0; i < txt.length; i++) {
+//         if (txt.slice(i, i + 1) === letter) {
+//             count = count + 1;
+//         }
+//     }
+//     document.write("Word: " + word);
+//     document.write("<br>There are " + count + " occurrence(s) of letter '" + letter + "'");
+
+// }
+// var word = prompt("Enter Word");
+// var letter = prompt("Enter letter to find");
+// findLetter(word, letter);
+
+// Chapter No: 35 - 38 & Task No: 14
+// function calcCircumference(r) {
+//     var circum = 2 * 3.142 * r;
+//     circum = circum.toFixed(2);
+//     document.write("The Circumference of circle = " + circum);
+//     return circum;
+// }
+
+// function calcArea(r) {
+//     var area = 3.142 * r * r;
+//     area = area.toFixed(2);
+//     document.write("<br>The Circumference of circle = " + area);
+//     return area;
+// }
+// var radius = +prompt("Enter Radius of circle");
+// calcCircumference(radius);
+// calcArea(radius);
